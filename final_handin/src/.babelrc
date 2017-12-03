@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "react-native",
+    "babel-preset-react-native-stage-0/decorator-support"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "transform-react-jsx-source"
+      ]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver", {
+        "cwd": "babelrc",
+        "root": "./src" // note, this is the directory for my app, for you this may be something different
+      }
+    ]
+  ]
+}
+
